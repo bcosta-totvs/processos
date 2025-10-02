@@ -1,6 +1,9 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
+import { AppModule } from './app/app.module';
 import { AppComponent } from './app/app.component';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+// Inicializa a aplicação Angular usando o AppModule
+platformBrowserDynamic().bootstrapModule(AppModule)
+  // Captura e exibe erros que possam ocorrer durante a inicialização
+  .catch(err => console.error(err));

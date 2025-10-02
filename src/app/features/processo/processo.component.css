@@ -1,0 +1,31 @@
+.actions-table-list {
+    margin-bottom: -4.775rem; 
+    margin-left: -8px;       
+    z-index: 999;             
+    position: relative;       
+}
+
+.button-group {
+    display: flex;          
+    gap: 10px;               
+    align-items: center;     
+}
+
+
+
+
+/*
+.actions-table-list {
+    margin-bottom: -4.775rem; // Ajusta o espaçamento inferior, sobrepondo elementos abaixo
+    margin-left: -8px;        // Move o elemento levemente para a esquerda
+    z-index: 999;             // Garante que o elemento fique acima de outros na pilha de renderização
+    position: relative;       // Permite posicionamento relativo para manipulação de sobreposição
+}
+
+.button-group {
+    display: flex;            // Exibe os botões em linha (horizontal)
+    gap: 10px;                // Espaçamento de 10px entre os botões
+    align-items: center;      // Alinha os botões verticalmente ao centro
+}
+
+*/

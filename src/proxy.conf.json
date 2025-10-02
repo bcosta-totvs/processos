@@ -1,0 +1,14 @@
+{
+    "/app-root": {
+        "target": "http://localhost:8082/rest",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": false,
+        "pathRewrite" : {
+            "^/app-root" : ""
+        },
+        "headers": {
+            "Connection": "keep-alive"
+        } 
+    }
+}

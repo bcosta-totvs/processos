@@ -1,59 +1,83 @@
 # Processo
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.17.
+Aplicação Angular para gerenciamento de processos, utilizando PO-UI para componentes visuais e integração com Protheus.
 
-## Development server
+## Requisitos
 
-To start a local development server, run:
+- Node.js >= 18.x
+- npm >= 9.x
+- Angular CLI >= 19.2.17
+
+## Instalação
+
+Clone o repositório e instale as dependências:
+
+```bash
+git clone https://github.com/bcosta-totvs/processos
+npm install
+```
+
+## Desenvolvimento
+
+Para iniciar o servidor de desenvolvimento:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Acesse [http://localhost:4200](http://localhost:4200) no navegador.
 
-## Code scaffolding
+## Build
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+Para gerar o build de produção:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Os artefatos serão gerados na pasta `dist/`.
 
-## Running unit tests
+## Testes
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Unitários
+
+Execute os testes unitários com Karma:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+### End-to-End
 
-For end-to-end (e2e) testing, run:
+Para testes e2e (caso configurado):
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Estrutura do Projeto
 
-## Additional Resources
+```
+src/
+  app/                # Código principal da aplicação
+  assets/             # Arquivos estáticos
+  styles.css          # Estilos globais
+  index.html          # HTML principal
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Contribuição
+
+1. Fork este repositório
+2. Crie uma branch (`git checkout -b feature/nova-feature`)
+3. Commit suas alterações (`git commit -am 'Adiciona nova feature'`)
+4. Push para a branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
+
+## Licença
+
+Este projeto está sob licença MIT.
+
+## Recursos Adicionais
+
+- [Documentação Angular CLI](https://angular.dev/tools/cli)
+- [PO-UI](https://po-ui.io/documentation/po-dialog?view=doc)

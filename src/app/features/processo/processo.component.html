@@ -1,0 +1,59 @@
+<po-page-list 
+    [p-title]="pageTitle"
+    [p-breadcrumb]="breadcrumb"
+>  
+
+<!--
+    Página de listagem de processos usando componentes PO UI.
+    Exibe botão para carregar processos, tabela de dados e botão para abrir documentação
+    -->
+    <po-widget class="po-row">
+        <po-button  
+          p-label="Carregar Processos" 
+          (p-click)="carregarProc()"> 
+        </po-button>
+  </po-widget>
+
+  <po-widget *ngIf="lcallProc" class="po-row po-mt-2">
+
+    <!-- Widget exibido somente se lcallProc for verdadeiro -->
+      <div class="po-row po-lg-8 po-pb-1 actions-table-list">
+        <div class="po-lg-5 po-xl-6 po-mt-2 button-group">
+          <po-button
+            class="po-mt-2 po-pb-2"
+            p-label="Documentação"
+            p-icon="an an-address-book"
+            (p-click)="abrirDoc()">
+          </po-button>
+        </div>
+      </div>
+
+    <!-- Tabela de processos -->
+      <po-table
+        class="po-sm-12 "
+        [p-auto-collapse]="true"
+        [p-columns]="colunasProc"
+        [p-items]="itemsFiltered"
+        [p-height]="500"
+        [p-hide-columns-manager]="false"
+        [p-sort]="true"
+        [p-striped]="false"
+        [p-selectable]="true"
+        [p-hide-table-search]="false"
+      >
+      </po-table>
+      
+  </po-widget>
+</po-page-list>
+
+<!-- 
+po-row: Define que o elemento é uma linha no grid do PO UI, ajudando a organizar os componentes horizontalmente.
+po-lg-8: Indica que, em telas grandes (large), o elemento ocupará 8 das 12 colunas disponíveis no grid. Isso controla o tamanho e posicionamento do elemento conforme o tamanho da tela.
+po-pb-1: Adiciona um espaçamento (padding-bottom) pequeno na parte inferior do elemento, melhorando o espaçamento visual.
+
+A classe po-sm-12 é do sistema de grid da PO UI e significa que, em telas pequenas (small), o elemento ocupará todas as 12 colunas disponíveis do grid. Ou seja, ele ficará com largura total na tela pequena,
+garantindo que o conteúdo seja exibido de forma responsiva e aproveite todo o espaço disponível.
+
+Resumindo:
+po-sm-12 = largura total (100%) do elemento em dispositivos pequenos.
+-->

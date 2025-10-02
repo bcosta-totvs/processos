@@ -1,0 +1,10 @@
+{
+  "name": "processo",
+  "version": "1",
+  "serverBackend": "/app-root",
+  "restEntryPoint": "",
+  "versionAPI": "",
+  "productLine": "Protheus",
+  "api_baseUrl": "/app-root"
+}
+  
