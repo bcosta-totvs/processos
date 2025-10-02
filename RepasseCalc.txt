@@ -1,0 +1,106 @@
+Versão do node e npm
+node -v
+npm -v
+
+Node
+https://nodejs.org/pt
+
+POUI
+https://po-ui.io/guides/getting-started
+
+ng version - versão do angular
+
+Criar o projeto
+ng new my-po-project --skip-install
+
+>CSS
+>Você quer ativar Renderização do Lado do Servidor (SSR) e Geração Estática de Site? N
+
+Instalar
+npm install
+
+Adiconando o pacote @po-ui/ng-components
+ng add @po-ui/ng-components
+
+Templates
+ng add @po-ui/ng-templates
+
+Protheus-lib-core
+npm i @totvs/protheus-lib-core
+https://tdn.totvs.com.br/display/public/framework/Protheus-lib-core
+
+Rode o projeto
+ng serve --development
+
+Configurando o tema da totvs
+https://github.com/totvs/po-theme-totvs
+
+Comando para apagar e limpar arquivos e pasta caso precise
+Remove-Item -Recurse -Force node_modules
+Remove-Item -Force package-lock.json
+
+Comando para limpar cache 
+npm cache clean --force
+
+Criar um novo component 
+ng generate component features/processo
+
+Rodar Teste
+ng test --source-map --code-coverage --no-watch 
+
+build:
+ng build --configuration production
+
+FwCallApp - Abrindo aplicativos Web no Protheus
+https://tdn.totvs.com.br/display/public/framework/FwCallApp+-+Abrindo+aplicativos+Web+no+Protheus
+
+Comando git
+# Inicializa o Git na sua pasta (caso ainda não tenha feito)
+git init
+
+# Adiciona todos os arquivos para o controle do Git
+git add .
+
+# Cria o primeiro commit com uma mensagem
+git commit -m "Primeiro commit - versão inicial do projeto"
+
+# Conecta seu repositório local com o remoto (o que você criou no GitHub)
+git remote add origin https://github.com/bcosta-totvs/processos.git
+
+# Envia os arquivos para o GitHub (para a branch main/master)
+git push -u origin master
+
+Alterações
+# Cria uma branch nova chamada development
+git checkout -b development
+
+# Envia para o repositório remoto
+git push -u origin development
+
+# Verifica o status
+ git status
+
+# Adiciona todos os arquivos novos/modificados
+git add .
+
+# Cria um commit com uma mensagem
+git commit -m "..."
+
+# Envia as mudanças para a branch development no remoto
+git push origin development
+
+
+git clone https://github.com/bcosta-totvs/totvs.git
+
+
+Explicação dos comandos
+
+git init → Cria um repositório Git na pasta atual.
+
+git add . → Prepara todos os arquivos para o commit. O . significa “todos os arquivos alterados”.
+
+git commit -m "mensagem" → Salva as alterações no histórico local com a mensagem especificada.
+
+git remote add origin URL → Conecta seu projeto local ao repositório remoto no GitHub. O nome padrão é origin.
+
+git push -u origin master → Envia seus commits locais para a branch master do repositório remoto e define como padrão (-u) para próximos git push sem precisar repetir.
